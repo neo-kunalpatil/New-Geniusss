@@ -48,3 +48,11 @@ Node.js & Express.js	Backend API development
 MongoDB (Database)	Storing quiz questions and leaderboard data
 Local Storage	Storing user scores locally for leaderboard
 Confetti.js & Sound Effects	Fun elements for user engagement
+![WhatsApp Image 2025-03-08 at 15 36 13_0c7cc7d3](https://github.com/user-attachments/assets/23c0695d-918c-45ac-bcaa-e36ec50849aa)
+![WhatsApp Image 2025-03-08 at 15 37 01_144f9b79](https://github.com/user-attachments/assets/574d1127-5630-4892-96fc-3b200181dd64)
+![WhatsApp Image 2025-03-08 at 15 37 53_bd36923d](https://github.com/user-attachments/assets/51e60ef6-115c-467b-b465-bf74cd587833)
+![WhatsApp Image 2025-03-08 at 15 38 37_6266e97d](https://github.com/user-attachments/assets/e90d276e-0831-448f-bd2f-c52b48d50d4f)
+
+
+
+
