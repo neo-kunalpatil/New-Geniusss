@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Quiz App - The Ultimate Challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ---------------- HEADER SECTION ---------------- -->
+    <header>
+        <div class="logo">🧠 Quiz Master</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#quiz">Start Quiz</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="dark-mode-toggle">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <!-- ---------------- HOME SECTION ---------------- -->
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to the Ultimate Quiz Challenge!</h1>
+            <p>Compete with players worldwide and test your knowledge.</p>
+            <button onclick="showModes()">Start Quiz</button>
+        </div>
+    </section>
+
+    <!-- ---------------- QUIZ MODE SELECTION ---------------- -->
+    <section id="quiz-modes" class="hidden">
+        <h2>Select Quiz Mode</h2>
+        <div class="mode-buttons">
+            <button onclick="startQuiz('physics')">Physics</button>
+            <button onclick="startQuiz('chemistry')">Chemistry</button>
+            <button onclick="startQuiz('math')">Math</button>
+            <button onclick="startQuiz('gk')">General Knowledge</button>
+        </div>
+    </section>
+
+    <!-- ---------------- QUIZ SECTION ---------------- -->
+    <section id="quiz" class="hidden">
+        <div class="quiz-container">
+            <h2 id="quiz-title">Quiz Time! Answer as fast as you can.</h2>
+            <div id="timer">Time Left: <span id="time-left">60</span> sec</div>
+            <div id="progress-bar"></div>
+            <div id="question-container">
+                <h3 id="question-text">Loading question...</h3>
+                <div id="options-container"></div>
+            </div>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </section>
+
+    <!-- ---------------- LEADERBOARD SECTION ---------------- -->
+    <section id="leaderboard">
+        <h2>Leaderboard - Top Players</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Player</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Dummy leaderboard data -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Alex Johnson</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Emma Brown</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Michael Davis</td>
+                    <td>89</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Olivia Wilson</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Daniel Martinez</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Emily Taylor</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ---------------- PROFILE SECTION ---------------- -->
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <p>Name: <span id="user-name">Guest</span></p>
+        <p>High Score: <span id="high-score">0</span></p>
+        <button onclick="logout()">Logout</button>
+    </section>
+
+    <!-- ---------------- ABOUT SECTION ---------------- -->
+    <section id="about">
+        <h2>About The Quiz</h2>
+        <p>This quiz app is designed to challenge your knowledge in various fields such as Science, History, Technology, and General Knowledge. Compete with players worldwide and climb the leaderboard.</p>
+        <h3>Why Play This Quiz?</h3>
+        <ul>
+            <li>✔ 1000+ Unique Questions</li>
+            <li>✔ Real-time Leaderboard</li>
+            <li>✔ Fun and Engaging UI</li>
+            <li>✔ Dark Mode Supported</li>
+        </ul>
+    </section>
+
+    <!-- ---------------- CONTACT SECTION ---------------- -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any suggestions? Reach out to us!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ---------------- FOOTER ---------------- -->
+    <footer>
+        <p>&copy; 2025 Hackathon Quiz App | Built with ❤️ for Quiz Enthusiasts</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
